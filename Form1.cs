@@ -16,7 +16,7 @@ namespace ImGui_Visual_Tool
         Point previousPoint;
         bool clicked = false;
 
-        public string code = "// Generated with ImGui Visual Tool\n";
+        public string code = "// Generated with ImGui Visual Tool v1\n";
 
         public List<Rectangle> boxesToDraw = new List<Rectangle>();
 
@@ -76,10 +76,11 @@ namespace ImGui_Visual_Tool
 
             boxesToDraw.Add(new Rectangle(previousPoint.X, previousPoint.Y, e.Location.X, e.Location.Y));
             
-            if(checkBox1.Checked) code += $"ImGui::GetOverlayDrawList()->AddRectFilled(ImVec2({previousPoint.X} - Head.x, Head.y), ImVec2(LeftArm.x + {e.Location.X}, RightFoot.y), ImGui::GetColorU32({{255.f, 0.f, 0.f, 1.f}}), 1);\n";
-            if (checkBox2.Checked)
+            if(checkBox2.Checked == true) code += $"ImGui::GetOverlayDrawList()->AddRectFilled(ImVec2(LeftArm.x-{previousPoint.X}, Head.y), ImVec2(LeftArm.x + {e.Location.X}, RightFoot.y), ImGui::GetColorU32({{255.f, 0.f, 0.f, 1.f}}), 1);\n";
+            if (checkBox1.Checked == true)
             {
-                if (checkBox3.Checked) code += $"char DistanceStr[10];\nsprintf(DistanceStr, \" [%im]\", Distance);\nPlayerName.append(DistanceStr);\n";
+                if (checkBox3.Checked == true) 
+                    code += $"char DistanceStr[10];\nsprintf(DistanceStr, \" [%im]\", Distance);\nPlayerName.append(DistanceStr);\n";
                 code += $"ImGui::GetOverlayDrawList()->AddText(ImVec2({previousPoint.X} - Head.x, Head.y), ImGui::GetColorU32({{255.f, 0.f, 0.f, 1.f}}), PlayerName);\n";
             }
 
@@ -108,6 +109,7 @@ namespace ImGui_Visual_Tool
 
         private void button2_Click(object sender, EventArgs e)
         {
+            code = "// Generated with ImGui Visual Tool v1\n";
             boxesToDraw.Clear();
             pictureBox1.Invalidate();
         }
