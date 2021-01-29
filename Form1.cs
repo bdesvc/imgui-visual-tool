@@ -80,7 +80,7 @@ namespace ImGui_Visual_Tool
             if (checkBox2.Checked)
             {
                 if (checkBox3.Checked) code += $"char DistanceStr[10];\nsprintf(DistanceStr, \" [%im]\", Distance);\nPlayerName.append(DistanceStr);\n";
-                code += $"ImGui::GetOverlayDrawList()->AddRectFilled(ImVec2({previousPoint.X} - Head.x, Head.y), ImGui::GetColorU32({{255.f, 0.f, 0.f, 1.f}}), PlayerName);\n";
+                code += $"ImGui::GetOverlayDrawList()->AddText(ImVec2({previousPoint.X} - Head.x, Head.y), ImGui::GetColorU32({{255.f, 0.f, 0.f, 1.f}}), PlayerName);\n";
             }
 
             string msg = $"Added rectangle ({previousPoint.X}, {previousPoint.Y}) ({e.Location.X}, {e.Location.Y})\n";
