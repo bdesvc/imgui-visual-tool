@@ -1,0 +1,10 @@
+C:\Users\root\source\repos\ImGui Visual Tool\bin\Debug\ImGui Visual Tool.exe.config
+C:\Users\root\source\repos\ImGui Visual Tool\bin\Debug\ImGui Visual Tool.exe
+C:\Users\root\source\repos\ImGui Visual Tool\bin\Debug\ImGui Visual Tool.pdb
+C:\Users\root\source\repos\ImGui Visual Tool\obj\Debug\ImGui Visual Tool.csprojAssemblyReference.cache
+C:\Users\root\source\repos\ImGui Visual Tool\obj\Debug\ImGui_Visual_Tool.Form1.resources
+C:\Users\root\source\repos\ImGui Visual Tool\obj\Debug\ImGui_Visual_Tool.Properties.Resources.resources
+C:\Users\root\source\repos\ImGui Visual Tool\obj\Debug\ImGui Visual Tool.csproj.GenerateResource.cache
+C:\Users\root\source\repos\ImGui Visual Tool\obj\Debug\ImGui Visual Tool.csproj.CoreCompileInputs.cache
+C:\Users\root\source\repos\ImGui Visual Tool\obj\Debug\ImGui Visual Tool.exe
+C:\Users\root\source\repos\ImGui Visual Tool\obj\Debug\ImGui Visual Tool.pdb
